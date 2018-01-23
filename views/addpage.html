@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>Add a Page</h3>
+  <hr>
+  <form method="POST" action="/wiki/">
+
+    <div class= "form-group">
+      <label for="authorName">Author Name</label>
+      <div>
+        <input name="authorName" type="text" class="form-control"/>
+      </div>
+    </div>
+    <br>
+
+    <div>
+      <label for="authorEmail">Author Email</label>
+      <div>
+        <input name="authorEmail" type="text" class="form-control"/>
+      </div>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="title">Page Title</label>
+        <input name="title" type="text" class="form-control"/>
+    </div>
+    <br>
+
+    <div>
+      <label for= "content">Page Content</label>
+          <input name= "content", type= "text" class="form-control"/>
+    </div>
+    <br>
+
+    <div>
+      <label for= "page-status">Page Status?</label>
+    </div>
+    <br>
+
+    <div>
+      <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+    <br>
+
+  </form>
+{% endblock %}
